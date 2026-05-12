@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 07 - Formularios HTML</title>
+</head>
+
+<body>
+
+    <h1>ACTIVIDAD 07 - FORMULARIOS HTML</h1>
+
+    <hr>
+
+    <!-- PROYECTO 1 -->
+
+    <h2>Proyecto 1: Formulario de Contacto</h2>
+
+    <form action="">
+
+        <label>Nombre:</label><br>
+        <input type="text" placeholder="Ingrese su nombre" required><br><br>
+
+        <label>Correo Electrónico:</label><br>
+        <input type="email" placeholder="Ingrese su correo" required><br><br>
+
+        <label>Mensaje:</label><br>
+        <textarea rows="5" cols="40" placeholder="Escriba su mensaje"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <hr>
+
+    <!-- PROYECTO 2 -->
+
+    <h2>Proyecto 2: Registro para Evento Tecnológico</h2>
+
+    <form action="">
+
+        <label>Nombre Completo:</label><br>
+        <input type="text" placeholder="Ingrese su nombre" required><br><br>
+
+        <label>Correo:</label><br>
+        <input type="email" placeholder="Ingrese su correo" required><br><br>
+
+        <label>Perfil GitHub o LinkedIn:</label><br>
+        <input type="url" placeholder="https://github.com/usuario" required><br><br>
+
+        <label>Categoría de Charlas:</label><br>
+
+        <select>
+
+            <optgroup label="Frontend">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option>PHP</option>
+                <option>Java</option>
+                <option>Python</option>
+            </optgroup>
+
+            <optgroup label="IA">
+                <option>Machine Learning</option>
+                <option>Deep Learning</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <label>Talleres:</label><br>
+
+        <input type="checkbox"> Desarrollo Web<br>
+        <input type="checkbox"> Base de Datos<br>
+        <input type="checkbox"> Inteligencia Artificial<br><br>
+
+        <input type="submit" value="Registrar">
+
+    </form>
+
+    <hr>
+
+    <!-- PROYECTO 3 -->
+
+    <h2>Proyecto 3: Evaluación de Desempeño Laboral</h2>
+
+    <form action="">
+
+        <label>Nombre del Empleado:</label><br>
+
+        <input list="departamentos">
+
+        <datalist id="departamentos">
+            <option value="Recursos Humanos">
+            <option value="Sistemas">
+            <option value="Contabilidad">
+            <option value="Marketing">
+        </datalist>
+
+        <br><br>
+
+        <label>Nivel de desempeño (1-10):</label><br>
+
+        <input type="range" min="1" max="10">
+
+        <br><br>
+
+        <label>Satisfacción:</label><br>
+
+        <input type="radio" name="satisfaccion"> Excelente<br>
+        <input type="radio" name="satisfaccion"> Bueno<br>
+        <input type="radio" name="satisfaccion"> Regular<br>
+
+        <br>
+
+        <label>Comentarios:</label><br>
+
+        <textarea maxlength="200" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Evaluar">
+
+    </form>
+
+    <hr>
+
+    <!-- PROYECTO 4 -->
+
+    <h2>Proyecto 4: Inscripción de Pacientes</h2>
+
+    <form action="">
+
+        <fieldset>
+
+            <legend>Datos Personales</legend>
+
+            <label>Nombre:</label><br>
+            <input type="text"><br><br>
+
+            <label>Fecha de Nacimiento:</label><br>
+            <input type="date"><br><br>
+
+            <label>DNI:</label><br>
+            <input type="text" pattern="[0-9]{8}" placeholder="8 dígitos"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Historial Médico</legend>
+
+            <label>Enfermedades:</label><br>
+            <textarea rows="4" cols="40"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Documentación</legend>
+
+            <label>Contacto de Emergencia:</label><br>
+            <input type="tel" placeholder="987654321">
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Inscribirse">
+
+    </form>
+
+    <hr>
+
+    <!-- PROYECTO 5 -->
+
+    <h2>Proyecto 5: Reserva de Laboratorio</h2>
+
+    <form action="">
+
+        <label>Hora de Inicio:</label><br>
+        <input type="time"><br><br>
+
+        <label>Hora de Fin:</label><br>
+        <input type="time"><br><br>
+
+        <label>Cantidad de Alumnos:</label><br>
+        <input type="number" max="30"><br><br>
+
+        <label>Software Requerido:</label><br>
+
+        <select multiple>
+
+            <option>Visual Studio Code</option>
+            <option>NetBeans</option>
+            <option>MySQL</option>
+            <option>Oracle</option>
+
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Reservar">
+        <input type="reset" value="Limpiar">
+
+    </form>
+
+    <hr>
+
+    <!-- PROYECTO 6 -->
+
+    <h2>Proyecto 6: Reporte de Incidencias</h2>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        <label>Buscar Código del Equipo:</label><br>
+        <input type="search"><br><br>
+
+        <label>Descripción del Problema:</label><br>
+        <textarea rows="5" cols="40"></textarea><br><br>
+
+        <label>Adjuntar Evidencia:</label><br>
+        <input type="file" accept=".jpg,.png"><br><br>
+
+        <input type="submit" value="Enviar Reporte">
+
+    </form>
+
+</body>
+</html>
